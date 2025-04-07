@@ -1,0 +1,63 @@
+.nadpis{
+    background-color: rgb(235, 116, 5);
+    width: 100%;
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.karty{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.cukrovinky{
+    flex: 3;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+.info{
+    flex: 2;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+.vedouci{
+    flex: 1;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: auto;
+}
+h1{
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .karty{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+    .vedouci{
+        flex: 1;
+    }
+    .info{
+        flex: 2;
+    }
+    .cukrovinky{
+        flex: 3;
+    }
+    
+}
